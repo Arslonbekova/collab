@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+a {
+  all: unset;
+}
+
+input {
+  display: none;
+}
+
+header {
+  margin: 0 auto;
+  background: url("./img/Circle 1 (1).svg"), url("img/Ellipse 4.svg"), url("img/Circle 2.svg"), url("img/Circle 7.svg"), url("img/Circle 5.svg"), url("img/Circle 6.svg"), url("img/Circle 4.svg");
+  background-position: 1231px 606px, left top, center right, 663px 229px, 790px 951px, 739px 711px, 100px 451px;
+  background-repeat: no-repeat;
+}
+header .container {
+  padding-top: 48px;
+  padding-bottom: 50px;
+}
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .container nav .nav-left {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+header .container nav .nav-left label {
+  display: none;
+}
+header .container nav .nav-left .logo {
+  align-items: center;
+  display: flex;
+  gap: 11px;
+}
+header .container nav .nav-left .logo h4 {
+  color: var(--text-dark, #292930);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 97.827%;
+  letter-spacing: -0.84px;
+}
+header .container nav .nav-left .logo h4 span {
+  color: var(--color-primary, #5956E9);
+}
+header .container nav .nav-left #menu {
+  display: flex;
+  list-style: none;
+  gap: 55px;
+  flex-wrap: wrap;
+}
+header .container nav .nav-left #menu li {
+  padding: 6px 0;
+  border-bottom: solid transparent;
+  color: #999FAE;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+header .container nav .nav-left #menu li a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+header .container nav .nav-left #menu li:hover {
+  border-bottom: solid #5956E9;
+}
+header .container nav .nav-left #menu li:hover a {
+  color: #292930;
+}
+header .container nav .logo2 {
+  display: none;
+}
+header .container nav .logo2 h4 {
+  font-size: 19.31px;
+  letter-spacing: -0.579px;
+}
+header .container nav .nav-right {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+header .container nav .nav-right .button {
+  width: 180px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FAB8C4;
+  padding: 24px;
+}
+header .container nav .nav-right .button a {
+  padding: 24px 15px;
+  color: #2522BA;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+header .container nav .nav-right .search svg {
+  fill: white;
+}
+header .hero .container {
+  overflow: hidden;
+  display: flex;
+  gap: 150px;
+  padding-top: 0;
+}
+header .hero .container .left {
+  width: 100%;
+  max-width: 443px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+header .hero .container .left h1 {
+  color: #292930;
+  font-family: "DM Sans";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 99.327%;
+  /* 95.354px */
+  letter-spacing: -2.4px;
+}
+header .hero .container .left h1 span {
+  width: 72px;
+  height: 1px;
+  color: #5956E9;
+  font-size: 1;
+  line-height: 0%;
+  font-family: sans-serif;
+}
+header .hero .container .left p {
+  max-width: 378px;
+  color: var(--text-grey, #999FAE);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header .hero .container .left .buttons {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+header .hero .container .left .buttons a:nth-child(1) {
+  display: inline-flex;
+  padding: 29px 40px;
+  align-items: flex-end;
+  gap: 10px;
+  border-radius: 20px;
+  background: var(--color-primary, #5956E9);
+  border: 2px solid transparent;
+}
+header .hero .container .left .buttons a:nth-child(1) p {
+  color: var(--color-white, #FFF);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  width: 100px;
+}
+header .hero .container .left .buttons a:nth-child(1):hover {
+  border: 2px solid blue;
+}
+header .hero .container .left .buttons a:nth-child(2) {
+  display: flex;
+  padding: 29px 40px;
+  align-items: flex-end;
+  gap: 10px;
+  border-radius: 20px;
+  background: transparent;
+  align-items: center;
+}
+header .hero .container .left .buttons a:nth-child(2) p {
+  color: var(--text-grey, #999FAE);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  width: 120px;
+}
+header .hero .container .left .buttons a:nth-child(2):hover {
+  background: var(--color-primary, #5956E9);
+}
+header .hero .container .left .bottom {
+  padding-top: 75px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  gap: 16px;
+}
+header .hero .container .left .bottom p {
+  color: var(--text-grey, #999FAE);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.4px;
+}
+header .hero .container .scene {
+  width: 100%;
+  max-width: 717.263px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+header .hero .container .scene .top-left {
+  position: absolute;
+  transform: translate(-267px, 51px);
+  width: 100%;
+  max-width: 181px;
+  height: 86px;
+  background-image: url("./img/Group.png");
+  background-repeat: no-repeat;
+}
+header .hero .container .scene .top-right {
+  position: absolute;
+  width: 100%;
+  max-width: 226.321px;
+  height: 245.064px;
+  transform: translate(210px, -164px);
+  background-image: url("./img/left.svg");
+  background-repeat: no-repeat;
+}
+header .hero .container .scene .klv {
+  position: absolute;
+  width: 100%;
+  max-width: 307px;
+  height: 34px;
+  background-image: url("./img/klavi.svg");
+  background-repeat: no-repeat;
+  transform: translate(0px, 293px);
+  background-size: contain;
+}
+header .hero .container .scene .mouse {
+  position: absolute;
+  transform: translate(206px, 293px);
+  max-width: 72px;
+  height: 35.699px;
+  width: 100%;
+  background-image: url("./img/Mouse.svg");
+  background-repeat: no-repeat;
+  background-position: -17px 0px;
+}
+header .hero .container .scene .manitor {
+  background-image: url("./img/Group (1).svg"), url("./img/top.svg"), url("img/Group.svg");
+  background-repeat: no-repeat;
+  background-position: 31px 112px, 15px 15px, 0px 0px;
+  width: 552px;
+  height: 442.392px;
+}/*# sourceMappingURL=stayle.css.map */

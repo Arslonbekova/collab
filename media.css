@@ -1,0 +1,154 @@
+@media screen and (max-width: 1250px) {
+  header {
+    background: url("img/Ellipse 4 (1).svg"), url("img/Circle 2.svg"), url("img/Circle 7.svg"), url("img/Circle 5.svg"), url("img/Circle 6.svg");
+    background-position: left top, 649px center, 473px 229px, 790px 951px, 524px 744px;
+    background-repeat: no-repeat;
+  }
+  header .container {
+    max-width: 952px;
+    padding-top: 40px;
+  }
+  header .container nav .nav-right .search svg {
+    fill: #292930;
+  }
+  header .hero .container {
+    gap: 80px;
+    max-width: 1240px;
+  }
+  header .hero .container .left {
+    padding-left: 72px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    background: url("./img/Circle 7 (1).svg"), url("./img/Circle 6 (1).svg"), url("./img/Circle 5 (1).svg"), url("./img/Circle 8.svg");
+    background-position: right 110px, 237px 300px, right 722px, 311px 429px;
+    background-repeat: no-repeat;
+  }
+  header .container {
+    max-width: 311px;
+    padding-top: 40px;
+  }
+  header .container nav .nav-left label {
+    display: block;
+  }
+  header .container nav .nav-left .logo1 {
+    display: none;
+  }
+  header .container nav .nav-left #menu {
+    position: absolute;
+    display: none;
+    left: 136px;
+    top: 134px;
+  }
+  header .container nav .nav-left #menu li a {
+    color: var(--text-grey, #999FAE);
+    font-family: "DM Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 250%;
+    letter-spacing: -0.65px;
+  }
+  header .container nav .nav-left #menu li:hover {
+    border-bottom: solid transparent;
+  }
+  header .container nav .nav-left input:checked + #menu {
+    display: flex;
+    top: 50px;
+    width: 103px;
+    justify-content: center;
+    gap: 20px;
+  }
+  header .container nav .logo2 {
+    display: flex;
+    gap: 7px;
+  }
+  header .container nav .nav-right .button {
+    display: none;
+  }
+  header .hero .container {
+    overflow: initial;
+    flex-direction: column;
+    gap: 52px;
+    max-width: 311px;
+    padding-left: 0px;
+    padding-top: 52px;
+  }
+  header .hero .container input:checked + .left {
+    display: none;
+  }
+  header .hero .container .left {
+    padding-left: 7px;
+    max-width: 276px;
+    gap: 40px;
+  }
+  header .hero .container .left h1 {
+    color: #292930;
+    font-size: 60px;
+    /* 59.596px */
+    letter-spacing: -1.5px;
+  }
+  header .hero .container .left p {
+    max-width: 230px;
+  }
+  header .hero .container .left .buttons {
+    margin-top: 16px;
+    gap: 16px;
+  }
+  header .hero .container .left .buttons a:nth-child(1) {
+    display: inline-flex;
+    padding: 0px 46px;
+    align-items: center;
+    gap: 0px;
+    flex-shrink: 0;
+    height: 64px;
+  }
+  header .hero .container .left .buttons a:nth-child(2) {
+    display: inline-flex;
+    padding: 0px 0px;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid var(--stroke-super-light, #E3E6E9);
+  }
+  header .hero .container .left .buttons a:nth-child(2) p {
+    display: none;
+  }
+  header .hero .container .left .bottom {
+    padding-top: 70px;
+  }
+  header .hero .container .scene .manitor {
+    background-position: 23px 62px, 15px 15px, 0px 0px;
+    width: 310.447px;
+    background-size: 85%, 90%, 123%;
+    height: 248.804px;
+  }
+  header .hero .container .scene .top-left {
+    max-width: 101.795px;
+    height: 48.367px;
+    transform: translate(-168px, 25px);
+    background-size: 100%;
+  }
+  header .hero .container .scene .top-right {
+    max-width: 75.022px;
+    height: 81.234px;
+    transform: translate(82px, -64px);
+    background-size: 146%;
+  }
+  header .hero .container .scene .klv {
+    max-width: 172.658px;
+    height: 19.122px;
+    transform: translate(0px, 161px);
+    background-size: 100%;
+  }
+  header .hero .container .scene .mouse {
+    transform: translate(122px, 160px);
+    max-width: 40.493px;
+    height: 20.077px;
+    background-size: 100%;
+    background-position: 0;
+  }
+}/*# sourceMappingURL=media.css.map */
