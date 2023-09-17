@@ -20,7 +20,7 @@ input {
 
 header {
   margin: 0 auto;
-  background: url("./img/Circle 1 (1).svg"), url("img/Ellipse 4.svg"), url("img/Circle 2.svg"), url("img/Circle 7.svg"), url("img/Circle 5.svg"), url("img/Circle 6.svg"), url("img/Circle 4.svg");
+  background: url("img/Circle 1.svg"), url("img/Ellipse 4.svg"), url("img/Circle 2.svg"), url("img/Circle 7.svg"), url("img/Circle 5.svg"), url("img/Circle 6.svg"), url("img/Circle 4.svg");
   background-position: 1231px 606px, left top, center right, 663px 229px, 790px 951px, 739px 711px, 100px 451px;
   background-repeat: no-repeat;
 }
@@ -237,7 +237,7 @@ header .hero .container .scene .top-left {
   width: 100%;
   max-width: 181px;
   height: 86px;
-  background-image: url("./img/Group.png");
+  background-image: url("./img/left.png");
   background-repeat: no-repeat;
 }
 header .hero .container .scene .top-right {
@@ -246,7 +246,7 @@ header .hero .container .scene .top-right {
   max-width: 226.321px;
   height: 245.064px;
   transform: translate(210px, -164px);
-  background-image: url("./img/left.svg");
+  background-image: url("./img/right.png");
   background-repeat: no-repeat;
 }
 header .hero .container .scene .klv {
@@ -254,7 +254,7 @@ header .hero .container .scene .klv {
   width: 100%;
   max-width: 307px;
   height: 34px;
-  background-image: url("./img/klavi.svg");
+  background-image: url("./img/klv.png");
   background-repeat: no-repeat;
   transform: translate(0px, 293px);
   background-size: contain;
@@ -265,12 +265,12 @@ header .hero .container .scene .mouse {
   max-width: 72px;
   height: 35.699px;
   width: 100%;
-  background-image: url("./img/Mouse.svg");
+  background-image: url("./img/Mouse.png");
   background-repeat: no-repeat;
   background-position: -17px 0px;
 }
 header .hero .container .scene .manitor {
-  background-image: url("./img/Group (1).svg"), url("./img/top.svg"), url("img/Group.svg");
+  background-image: url("img/Group.png"), url("img/Group (1).png"), url("img/monitor.png");
   background-repeat: no-repeat;
   background-position: 31px 112px, 15px 15px, 0px 0px;
   width: 552px;
