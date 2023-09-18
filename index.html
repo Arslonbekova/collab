@@ -14,6 +14,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="stayle.css">
     <link rel="stylesheet" href="media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -54,6 +56,20 @@
                                     d="M13.6909 0.277089C14.0902 0.658684 14.1045 1.29169 13.7229 1.69094L7.72291 7.9686C7.53424 8.166 7.27306 8.27766 7 8.27766C6.72694 8.27766 6.46575 8.166 6.27708 7.9686L0.277084 1.69094C-0.10451 1.29169 -0.0901947 0.658683 0.309058 0.277088C0.708312 -0.104507 1.34132 -0.0901919 1.72291 0.309062L7 5.83035L12.2771 0.309062C12.6587 -0.0901914 13.2917 -0.104506 13.6909 0.277089Z"
                                     fill="#999FAE" />
                             </svg>
+                        </li>
+                        <li>
+                            <div class="scene">
+                                <div class="manitor">
+                                </div>
+                                <div class="top-left">
+                                </div>
+                                <div class="top-right">
+                                </div>
+                                <div class="klv">
+                                </div>
+                                <div class="mouse">
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -124,22 +140,38 @@
                     </div>
                 </div>
                 <div class="scene">
-                    <div class="manitor">
+                    <div class="manitor"
+                    data-aos="zoom-out-up"
+                    data-aos-duration="1000">
+                        <div class="top-left"
+                        data-aos="fade-up-right"
+                        data-aos-duration="1000">
+                        </div>
+                        <div 
+                        data-aos="fade-down-left"
+                        class="top-right"
+                        data-aos-duration="1000">
+                        </div>
+                        <div class="klav"
+                        data-aos="zoom-out-up"
+                        data-aos-duration="700">
+                        </div>
+                        <div class="mause"
+                        data-aos="fade-left"
+                        data-aos-duration="700">
+                        </div>
                     </div>
-                    <div class="top-left">
-                    </div>
-                    <div class="top-right">
-                    </div>
-                    <div class="klv">
-                    </div>
-                    <div class="mouse">
-                    </div>
+                    
                 </div>
             </div>
 
         </div>
     </header>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
