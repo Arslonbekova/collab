@@ -79,7 +79,7 @@
                     #menu {
                         transition: 2s;
                         width: 0%;
-                        height: 80%;
+                        height: 100%;
                         overflow: hidden;
                         position: absolute;
                         z-index: 1;
@@ -145,6 +145,7 @@
         }
 
         .hero {
+            overflow:hidden;
             .container {
                 overflow: initial;
                 flex-direction: column;
@@ -226,21 +227,21 @@
                         .top-right {
                             max-width: 75.022px;
                             height: 81.234px;
-                            top: 26px;
-                            left: 200px;
+                            top: 25px;
+    left: 201px;
                             background-size: 146%;
                         }
 
                         .klav {
                             max-width: 172.658px;
                             height: 19.122px;
-                            top: 275px;
-                            left: 80px;
+                            top: 264px;
+                            left: 72px;
                         }
 
                         .mause {
-                            top: 272px;
-                            left: 255px;
+                            top: 267px;
+    left: 256px;
                             max-width: 40.493px;
                             height: 20.077px;
                             background-size: 100%;
