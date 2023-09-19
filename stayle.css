@@ -62,7 +62,6 @@ header .container nav .nav-left #menu {
   display: flex;
   list-style: none;
   gap: 55px;
-  flex-wrap: wrap;
 }
 header .container nav .nav-left #menu li {
   padding: 6px 0;
