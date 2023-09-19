@@ -7,7 +7,7 @@
   header .container {
     padding-top: 40px;
   }
-  header .container nav .nav-right .search svg {
+  header .container nav .nav-right label svg {
     fill: #292930;
   }
   header .hero .container {
@@ -47,7 +47,7 @@
     display: none;
   }
   header .container nav .nav-left #menu {
-    transition: 2s;
+    transition: 0.8s;
     width: 0%;
     height: 100%;
     overflow: hidden;
@@ -70,6 +70,9 @@
     font-weight: 500;
     line-height: 250%;
     letter-spacing: -0.65px;
+  }
+  header .container nav .nav-left #menu li i {
+    display: none;
   }
   header .container nav .nav-left #menu li .scene {
     display: block;
@@ -115,11 +118,18 @@
     max-width: 276px;
     gap: 40px;
   }
-  header .hero .container .left h1 {
+  header .hero .container .left h1 span {
     color: #292930;
     font-size: 60px;
     /* 59.596px */
     letter-spacing: -1.5px;
+  }
+  header .hero .container .left h1 span .dot {
+    top: 27px;
+    right: 42px;
+  }
+  header .hero .container .left h1 span span {
+    top: 18px;
   }
   header .hero .container .left p {
     max-width: 230px;

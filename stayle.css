@@ -12,10 +12,7 @@
 
 a {
   all: unset;
-}
-
-input {
-  display: none;
+  cursor: pointer;
 }
 
 header {
@@ -38,6 +35,9 @@ header .container nav .nav-left {
   display: flex;
   gap: 60px;
   align-items: center;
+}
+header .container nav .nav-left input {
+  display: none;
 }
 header .container nav .nav-left label {
   display: none;
@@ -119,28 +119,89 @@ header .container nav .nav-left #menu li .scene .manitor .mause {
   background-size: 140%;
   background-position: -6px;
 }
-header .container nav .nav-left #menu li a {
+header .container nav .nav-left #menu li a, header .container nav .nav-left #menu li i {
+  padding: 1rem 0 1rem 0;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.64px;
 }
+header .container nav .nav-left #menu .wive {
+  display: flex;
+  gap: 50px;
+}
+header .container nav .nav-left #menu .wive .wive1 {
+  padding: 50px;
+  z-index: 1;
+  top: 100px;
+  position: absolute;
+  width: 1240px;
+  height: 386px;
+  left: -500px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: #a91e1e;
+  display: flex;
+  gap: 50px;
+}
+header .container nav .nav-left #menu .wive .wive1 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+header .container nav .nav-left #menu .wive .wive1 > div .feauters {
+  display: flex;
+}
+header .container nav .nav-left #menu .wive .wive1 > div .feauters .img {
+  width: 50px;
+  height: 50px;
+  background: url("./img/- Coffee.png");
+  background-size: contain;
+}
+header .container nav .nav-left #menu .wive .wive1 > div .feauters .text {
+  display: flex;
+  flex-direction: column;
+}
+header .container nav .nav-left #menu .wive .wive1 > div .line2 .img {
+  background: url("./img/Camera _ (1).png");
+}
+header .container nav .nav-left #menu .wive .wive1 > div .line3 .img {
+  background: url("./img/Camera _ (1).png");
+}
+header .container nav .nav-left #menu .wive .wive1 > div .line4 .img {
+  background: url("./img/Camera _ (1).png");
+}
+header .container nav .nav-left #menu .wive .wive1 > div .line5 .img {
+  background: url("./img/Camera _ (1).png");
+}
+header .container nav .nav-left #menu .wive .wive1 > div .line6 .img {
+  background: url("./img/Camera _ (1).png");
+}
+header .container nav .nav-left #menu .wive .wive1 > div .line7 .img {
+  background: url("./img/Camera _ (1).png");
+}
+header .container nav .nav-left #menu .wive .line {
+  width: 1px;
+  height: 248px;
+  opacity: 0.2;
+  background: #999FAE;
+}
 header .container nav .nav-left #menu li::after {
   content: "";
   width: 0%;
   height: 2px;
   background: #5956E9;
-  transition: 2s;
+  transition: 1s;
   position: absolute;
-  top: 36px;
   left: 50%;
+  top: 50px;
 }
 header .container nav .nav-left #menu li:hover::after {
   width: 100%;
   left: 0%;
 }
-header .container nav .nav-left #menu li:hover a {
+header .container nav .nav-left #menu li:hover a, header .container nav .nav-left #menu li:hover i {
   color: #292930;
 }
 header .container nav .logo2 {
@@ -154,6 +215,41 @@ header .container nav .nav-right {
   display: flex;
   gap: 40px;
   align-items: center;
+}
+header .container nav .nav-right #search {
+  display: none;
+}
+header .container nav .nav-right label {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .container nav .nav-right label input {
+  right: 0px;
+  position: absolute;
+  display: none;
+  width: 300px;
+  height: 34px;
+  padding: 0 35px 0 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(41, 41, 48, 0.1);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #292930;
+  outline: none;
+  border: none;
+  transition: 2s;
+}
+header .container nav .nav-right label svg {
+  position: absolute;
+  right: 10px;
+  fill: white;
+}
+header .container nav .nav-right input:checked + label input {
+  display: block;
+}
+header .container nav .nav-right input:checked + label svg {
+  fill: rgb(79, 17, 248);
 }
 header .container nav .nav-right .button {
   width: 180px;
@@ -173,9 +269,6 @@ header .container nav .nav-right .button a {
   line-height: normal;
   letter-spacing: -0.64px;
 }
-header .container nav .nav-right .search svg {
-  fill: white;
-}
 header .hero {
   padding-bottom: 100px;
 }
@@ -194,20 +287,30 @@ header .hero .container .left {
   gap: 24px;
 }
 header .hero .container .left h1 {
+  display: flex;
+  flex-direction: column;
+}
+header .hero .container .left h1 span {
   color: #292930;
   font-family: "DM Sans";
   font-size: 96px;
   font-style: normal;
   font-weight: 500;
   line-height: 99.327%;
-  /* 95.354px */
   letter-spacing: -2.4px;
+  position: relative;
 }
-header .hero .container .left h1 span {
+header .hero .container .left h1 span .dot {
+  top: 47px;
+  right: 42px;
+}
+header .hero .container .left h1 span span {
+  top: 25px;
+  text-align: center;
+  position: absolute;
   width: 72px;
   height: 1px;
   color: #5956E9;
-  font-size: 1;
   line-height: 0%;
   font-family: sans-serif;
 }
