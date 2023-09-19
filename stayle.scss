@@ -43,10 +43,6 @@ header {
                 label {
                     display: none;
                 }
-
-                // input{
-                //     display: none;
-                // }
                 .logo {
                     align-items: center;
                     display: flex;
@@ -75,14 +71,62 @@ header {
 
                     li {
                         padding: 6px 0;
-                        border-bottom: solid transparent;
                         color: #999FAE;
                         display: flex;
                         gap: 14px;
                         align-items: center;
+                        position: relative;
 
                         .scene {
                             display: none;
+                            .manitor {
+                                background-image: url("img/Group.png"), url("img/Group\ \(1\).png"), url("img/monitor.png");
+                                background-position: 23px 62px, 15px 15px, 0px 0px;
+                                background-repeat: no-repeat;
+                                width: 310.447px;
+                                background-size: 85%, 90%, 123%;
+                                height: 248.804px;
+                                position: relative;
+                                .top-right {
+                                    width: 100%;
+                                    position: absolute;
+                                    background-image: url("./img/right.png");
+                                    background-repeat: no-repeat;
+                                    max-width: 111.901px;
+                                    height: 130.464px;
+                                    top: -49px;
+    left: 229px;
+    background-size: 154%;
+    background-position: -8px 12px;
+                                }
+
+                                .klav {
+                                    width: 100%;
+                                    position: absolute;
+                                    background-image: url("./img/klv.png");
+                                    background-repeat: no-repeat;
+                                    max-width: 172.658px;
+                                    height: 19.122px;
+                                    top: 279px;
+                                    left: 67px;
+                                    background-size: 110%;
+                                    background-position: -6px;
+                                }
+
+                                .mause {
+                                    width: 100%;
+                                    position: absolute;
+                                    background-image: url("./img/Camera\ _.png");
+                                    background-repeat: no-repeat;
+                                    top: 276px;
+                                    left: 268px;
+                                    max-width: 69.723px;
+                                    height: 62.477px;
+                                    background-size: 140%;
+                                    background-position: -6px;
+                                }
+                            }
+
                         }
 
                         a {
@@ -93,10 +137,21 @@ header {
                             letter-spacing: -0.64px;
                         }
                     }
-
-                    li:hover {
-                        border-bottom: solid #5956E9;
-
+                    li::after{
+                        content: '';
+                        width: 0%;
+                        height: 2px;
+                        background:#5956E9 ;
+                        display: block;
+                        transition:2s;
+                        position: absolute;
+                        top:36px;
+                      }
+                      li:hover::after{
+                        width: 100%;
+                      }
+                   
+                    li:hover{
                         a {
                             color: #292930;
                         }
@@ -201,7 +256,7 @@ header {
                     margin-top: 16px;
                     display: flex;
                     gap: 10px;
-
+                    flex-wrap: wrap;
                     a:nth-child(1) {
                         display: inline-flex;
                         padding: 29px 40px;

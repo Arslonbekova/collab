@@ -6,6 +6,7 @@
 
         .container {
             padding-top: 40px;
+
             nav {
                 .nav-right {
                     .search {
@@ -33,9 +34,10 @@
 
 @media screen and (max-width:1021px) {
     header {
-        background: url("img/Circle\ 6.svg"),url("img/Circle\ 7.svg"),url("img/Ellipse\ 4.svg"), url("./img/Circle\ 7\ \(1\).svg"), url("./img/Circle\ 5\ \(1\).svg");
-        background-position: 454px 699px,473px 229px,-51px -45px,right 110px, right 722px;
+        background: url("img/Circle\ 6.svg"), url("img/Circle\ 7.svg"), url("img/Ellipse\ 4.svg"), url("./img/Circle\ 7\ \(1\).svg"), url("./img/Circle\ 5\ \(1\).svg");
+        background-position: 454px 699px, 473px 229px, -51px -45px, right 110px, right 722px;
         background-repeat: no-repeat;
+
         .container {
 
             nav {
@@ -47,9 +49,10 @@
             }
 
         }
-        
+
     }
 }
+
 @media screen and (max-width:761px) {
     header {
         background: url("./img/Circle\ 7\ \(1\).svg"), url("./img/Circle\ 6\ \(1\).svg"), url("./img/Circle\ 5\ \(1\).svg"), url("./img/Circle\ 8.svg");
@@ -63,6 +66,7 @@
             nav {
 
                 padding: 0 32px;
+
                 .nav-left {
                     label {
                         display: block;
@@ -73,10 +77,20 @@
                     }
 
                     #menu {
+                        transition: 2s;
+                        width: 0%;
+                        height: 80%;
+                        overflow: hidden;
                         position: absolute;
-                        display: none;
-                        left: 0px;
-                        top: 134px;
+                        z-index: 1;
+                        top: 70px;
+                        padding-top:100px;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 20px;
+                        left: 0;
+                        background-color: white;
+                        display: flex;
 
                         li {
                             a {
@@ -88,75 +102,30 @@
                                 line-height: 250%;
                                 letter-spacing: -0.65px;
                             }
+                            .scene{
+                                display: block;
+                            }
                         }
 
-                        li:hover {
-                            border-bottom: solid transparent;
+                        li::after {
+                            top: 60px;
                         }
                     }
 
                     input:checked+#menu {
-                        display: flex;
-                        width: 311px;
-                        flex-direction: column;
-                        justify-content: center;
-                        gap: 20px;
-                        background-color: white;
-                        li{
-                            .scene {
-                                display: inline-block;
-                                .manitor {
-                                    background-image: url("img/Group.png"), url("img/Group\ \(1\).png"),url("img/monitor.png");
-                                     background-repeat: no-repeat;
-                                    background-position: 23px 62px, 15px 15px, 0px 0px;
-                                    width: 310.447px;
-                                    background-size: 85%, 90%, 123%;
-                                    height: 248.804px;
-                                }
-            
-                                .top-left {
-                                    position: absolute;
-                                    width: 100%;
-                                    background-image: url("./img/left.png");
-                                    background-repeat: no-repeat;
-                                    max-width: 101.795px;
-                                    height: 48.367px;
-                                    transform: translate(-168px, 25px);
-                                    background-size: 100%;
-                                }
-            
-                                .top-right {
-                                    position: absolute;
-                                    width: 100%;
-                                    background-image: url("./img/right.png");
-                                    background-repeat: no-repeat;
-                                    max-width: 75.022px;
-                                    height: 81.234px;
-                                    transform: translate(82px, -64px);
-                                    background-size: 146%;
-                                }
-            
-                                .klv {
-                                    position: absolute;
-                                    width: 100%;
-                                    background-image: url("./img/klv.png");
-                                    background-repeat: no-repeat;
-                                    max-width: 172.658px;
-                                    height: 19.122px;
-                                    background-size: 100%;
-                                }
-            
-                                .mouse {
-                                    width: 100%;
-                                    background-image: url("./img/Mouse.png");
-                                    background-repeat: no-repeat;
-                                    transform: translate(122px, 160px);
-                                    max-width: 40.493px;
-                                    height: 20.077px;
-                                    background-size: 100%;
-                                    background-position: 0;
-                                }
-                            }
+                        width: 100%;
+
+                        li {
+                            max-width: 103px;
+                            
+                        }
+
+                        li:nth-child(5) {
+                            max-width: 311px;
+                        }
+
+                        li:nth-child(5)::after {
+                            display: none;
                         }
                     }
 
@@ -246,6 +215,7 @@
                         width: 310.447px;
                         background-size: 85%, 90%, 123%;
                         height: 248.804px;
+
                         .top-left {
                             max-width: 101.795px;
                             height: 48.367px;
@@ -253,7 +223,7 @@
                             left: -64px;
                             background-size: 100%;
                         }
-    
+
                         .top-right {
                             max-width: 75.022px;
                             height: 81.234px;
@@ -261,14 +231,14 @@
                             left: 200px;
                             background-size: 146%;
                         }
-    
+
                         .klav {
                             max-width: 172.658px;
                             height: 19.122px;
                             top: 275px;
                             left: 80px;
                         }
-    
+
                         .mause {
                             top: 272px;
                             left: 255px;
