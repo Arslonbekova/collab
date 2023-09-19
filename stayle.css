@@ -131,13 +131,14 @@ header .container nav .nav-left #menu li::after {
   width: 0%;
   height: 2px;
   background: #5956E9;
-  display: block;
   transition: 2s;
   position: absolute;
   top: 36px;
+  left: 50%;
 }
 header .container nav .nav-left #menu li:hover::after {
   width: 100%;
+  left: 0%;
 }
 header .container nav .nav-left #menu li:hover a {
   color: #292930;
