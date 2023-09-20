@@ -34,8 +34,9 @@ header {
             .nav-left {
                 input {
                     display: none;
-                
+
                 }
+
                 display: flex;
                 gap: 60px;
                 align-items: center;
@@ -68,7 +69,7 @@ header {
                     display: flex;
                     list-style: none;
                     gap: 55px;
-                    
+
                     li {
                         padding: 6px 0;
                         color: #999FAE;
@@ -130,22 +131,26 @@ header {
                             }
 
                         }
-                        
-                        a,i{
-                            padding:1rem 0 1rem 0;
+
+                        a,
+                        i {
+                            padding: 1rem 0 1rem 0;
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 500;
                             line-height: normal;
                             letter-spacing: -0.64px;
-                            
+
                         }
                     }
-                    .wive{
+
+                    .wive {
                         display: flex;
-                        gap: 50px;
-                        .wive1{
-                            padding: 50px;
+                        gap: 6px;
+                        width: 100%;
+                        max-width: 1224px;
+                        .wive1 {
+                            padding: 70px;
                             z-index: 1;
                             top: 100px;
                             position: absolute;
@@ -154,67 +159,151 @@ header {
                             left: -500px;
                             flex-shrink: 0;
                             border-radius: 32px;
-                            background: #a91e1e;
+                            background: white;
                             display: flex;
-                            gap: 50px;
-                            &>div{
+                            gap: 90px;
+
+                            &>div {
                                 display: flex;
                                 flex-direction: column;
-                                gap: 0px;
-                                .feauters{
+                                gap: 35px;
+
+                                h1 {
+                                    color: var(--color-dark, #27272E);
+                                    font-family: "DM Sans";
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 110%;
+                                    /* 22px */
+                                    letter-spacing: -0.9px;
+                                }
+
+                                .feauters {
                                     display: flex;
-                                    .img{
-                                        width: 50px;
-                                        height: 50px;  
-                                        background: url("./img/-\ Coffee.png"); 
-                                        background-size: contain;
+                                    gap: 13px;
+                                    align-items: center;
+
+                                    .img {
+                                        width: 32.037px;
+                                        height: 49.106px;
+                                        background: url("./img/-\ Coffee.png");
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        background-position: -11px 3px
                                     }
-                                    .text{
+
+                                    .text {
                                         display: flex;
                                         flex-direction: column;
+
+                                        h1 {
+                                            color: var(--color-dark, #27272E);
+                                            font-size: 15px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: normal;
+                                        }
+
+                                        p {
+                                            color: var(--text-grey, #999FAE);
+
+                                            font-size: 13px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: normal;
+                                            opacity: 0.4;
+                                        }
                                     }
                                 }
-                                .line2{
-                                    .img{
-                                        background: url("./img/Camera\ _\ \(1\).png"); 
+
+                                .line2 {
+                                    .img {
+                                        width: 40px;
+                                        height: 35.843px;
+                                        background: url("./img/Camera\ _\ \(1\).png");
+                                        background-size: 233%;
+                                        background-position: -5px;
+                                        background-repeat: no-repeat;
                                     }
                                 }
-                                .line3{
-                                    .img{
-                                        background: url("./img/Camera\ _\ \(1\).png"); 
+
+                                .line3 {
+                                    .img {
+                                        width: 32px;
+                                        height: 43.165px;
+                                        background: url("./img/Calendar\ _.png");
+                                        background-repeat: no-repeat;
+                                        background-position: -8px 1px;
+                                        background-size: 220%;
                                     }
                                 }
-                                .line4{
-                                    .img{
-                                        background: url("./img/Camera\ _\ \(1\).png"); 
+
+                                .line4 {
+                                    .img {
+                                        width: 40px;
+                                        height: 41.425px;
+                                        background: url("./img/Chatbox.png");
+                                        background-repeat: no-repeat;
+                                        background-size: 279%;
+                                        background-position: -28px;
+                                        background-repeat: no-repeat;
                                     }
                                 }
-                                .line5{
-                                    .img{
-                                        background: url("./img/Camera\ _\ \(1\).png"); 
+
+                                .line5 {
+                                    .img {
+                                        width: 50px;
+                                        height: 49.106px;
+                                        background: url("./img/Fill.png");
+                                        background-repeat: no-repeat;
+                                        background-size: 200%;
+                                        background-position: -4px -3px;
+                                        background-repeat: no-repeat;
                                     }
                                 }
-                                .line6{
-                                    .img{
-                                        background: url("./img/Camera\ _\ \(1\).png"); 
+
+                                .line6 {
+                                    .img {
+                                        width: 35px;
+                                        height: 39.45px;
+                                        background: url("./img/Clock\ _.png");
+                                        background-repeat: no-repeat;
+                                        background-size: 191%;
+                                        background-position: -18px 2px;
+                                        background-repeat: no-repeat;
                                     }
                                 }
-                                .line7{
-                                    .img{
-                                        background: url("./img/Camera\ _\ \(1\).png"); 
+
+                                .line7 {
+                                    .img {
+                                        width: 40px;
+                                        height: 43.128px;
+                                        background: url("./img/Bell\ Flat.png");
+                                        background-repeat: no-repeat;
+                                        background-size: 133%;
+                                        background-position: 3px 1px;
+                                        background-repeat: no-repeat;
                                     }
                                 }
 
                             }
-
-                        }
-                        .line{
-                            width: 1px;
-                            height: 248px;
-                            opacity: 0.2;
-                            background: #999FAE;
+                            .line {
+                                width: 1px;
+                                height: 248px;
+                                opacity: 0.2;
+                                background: #999FAE;
+                            }
+                            display: none;
+                        
                         }
                     }
+                    .wive:hover {
+                        .wive1{
+                            display: flex;
+                        }
+                    }
+
                     li::after {
                         content: '';
                         width: 0%;
@@ -232,7 +321,9 @@ header {
                     }
 
                     li:hover {
-                        a,i{
+
+                        a,
+                        i {
                             color: #292930;
                         }
                     }
@@ -253,18 +344,21 @@ header {
                 display: flex;
                 gap: 40px;
                 align-items: center;
+
                 #search {
                     display: none;
                 }
-                label{
+
+                label {
                     display: flex;
                     align-items: center;
                     position: relative;
-                    input{
+
+                    input {
                         right: 0px;
                         position: absolute;
                         display: none;
-                        width:300px;
+                        width: 300px;
                         height: 34px;
                         padding: 0 35px 0 15px;
                         border-radius: 5px;
@@ -275,23 +369,26 @@ header {
                         color: #292930;
                         outline: none;
                         border: none;
-                        transition: 2s;
                     }
+
                     svg {
                         position: absolute;
                         right: 10px;
                         fill: white;
                     }
                 }
-                input:checked + label {
-                    input{
-                        display:block;
-                        
+
+                input:checked+label {
+                    input {
+                        display: block;
+
                     }
-                    svg{
-                        fill:rgb(79, 17, 248); 
+
+                    svg {
+                        fill: rgb(79, 17, 248);
                     }
                 }
+
                 .button {
                     width: 180px;
                     height: 72px;
@@ -312,7 +409,7 @@ header {
                     }
                 }
 
-                
+
 
             }
 
@@ -337,9 +434,11 @@ header {
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
-                h1{
+
+                h1 {
                     display: flex;
                     flex-direction: column;
+
                     span {
                         color: #292930;
                         font-family: 'DM Sans';
@@ -348,12 +447,14 @@ header {
                         font-weight: 500;
                         line-height: 99.327%;
                         letter-spacing: -2.4px;
-                        
+
                         position: relative;
-                        .dot{
+
+                        .dot {
                             top: 47px;
                             right: 42px;
                         }
+
                         span {
                             top: 25px;
                             text-align: center;
@@ -366,15 +467,15 @@ header {
                         }
                     }
                 }
-                
+
 
                 p {
                     max-width: 378px;
                     color: var(--text-grey, #999FAE);
                     font-size: 18px;
                     font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
+                    font-weight: 400;
+                    line-height: normal;
                 }
 
                 .buttons {
